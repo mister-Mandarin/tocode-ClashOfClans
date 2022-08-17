@@ -1,4 +1,6 @@
-# vue-3-test1
+# Clash of Clans
+
+Приложение с курса «Vue 3 - Полное руководство» от to code
 
 ## Project setup
 ```
@@ -14,6 +16,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
