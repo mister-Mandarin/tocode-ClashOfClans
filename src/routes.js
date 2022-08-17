@@ -8,21 +8,27 @@ const routerHistory = createWebHashHistory();
 import homePage from '@/pages/home'
 import aboutPage from '@/pages/about'
 import notFoundPage from '@/pages/notFound'
+import cardPers from "@/components/cardPers";
 
 const routes = createRouter({
     history: routerHistory,
     routes: [
-        {
+      {
             path: '/',
             name: 'home',
             component: homePage
         },
-        {
-            path: '/about',
-            name: 'about',
-            component: aboutPage
-        },
-        // Мы хотим поймать абсолютно все пути, которые не соответствуют предыдущим маршрутам.
+      {
+        path: '/about',
+        name: 'about',
+        component: aboutPage
+      },
+      {
+        path: '/:person',
+        name: 'person',
+        component: cardPers
+      },
+      // Мы хотим поймать абсолютно все пути, которые не соответствуют предыдущим маршрутам.
         {
             path: '/:CatchAll(.*)',
             name: '404',
