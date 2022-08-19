@@ -16,7 +16,7 @@
       проходит цикл v-for и рисует нам элементы по item. Ищет item.alias
       -->
       <router-link
-        style='display: block; margin-top: 20px'
+        style='display: block; margin-top: 20px; text-decoration: underline;'
         v-if='link'
         :to='link'
       >О персонаже

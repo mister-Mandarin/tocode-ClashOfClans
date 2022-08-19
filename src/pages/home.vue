@@ -12,16 +12,7 @@
         </template>
 
         <template v-slot:characteristics>
-          <div class='card-stats'>
-            <div
-              v-for='(shar, index) in item.info'
-              :key='index'
-              class='one-third'
-            >
-              <div class='stat-value'>{{ shar.value }}</div>
-              <div class='stat'>{{ shar.title }}</div>
-            </div>
-          </div>
+          <UiCardStats :info="item.info" />
         </template>
       </ui-card>
     </slide>
@@ -36,6 +27,8 @@
 <script>
 import Card from '@/components/UI/uiCard';
 import items from '@/seeders/items';
+import UiCardStats from "@/components/UI/uiCardStats";
+
 // импортируем цсс карусели
 import 'vue3-carousel/dist/carousel.css';
 
@@ -44,6 +37,7 @@ import UiCard from '@/components/UI/uiCard';
 
 export default {
   components: {
+    UiCardStats,
     UiCard,
     card: Card,
 
