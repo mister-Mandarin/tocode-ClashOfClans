@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+# конфиги
+.editorconfig
+prettier.config.js
 
 # local env files
 .env.local

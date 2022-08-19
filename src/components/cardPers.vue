@@ -29,6 +29,7 @@ export default {
   created() {
     //нихуя не понимаю почему это работает...
     // В результате получаем конец адреса, который написан в адресной строке
+    // https://v3.router.vuejs.org/guide/essentials/dynamic-matching.html#catch-all-404-not-found-route
     const alias = this.$route.params.person;
 
     // ищем есть ли указанный алиас в seeders, в файлике с данными items
