@@ -1,27 +1,27 @@
 <template>
-  <div class="wrapper-person">
+  <div class='wrapper-person'>
     <div>
-      <img :src="item.img" :alt="item.title" />
-      <h1 class="title" style="color: white">{{ item.title }}</h1>
+      <img :src='item.img' :alt='item.title' />
+      <h1 class='title' style='color: white'>{{ item.title }}</h1>
       <p>{{ item.descr }}</p>
     </div>
-    <UiCardStats :info="item.info" />
-    <div class="button">
-      <router-link class="btn btnPrimary" to="/">К персонажам</router-link>
+    <UiCardStats :info='item.info' />
+    <div class='button'>
+      <router-link class='btn btnPrimary' to='/'>К персонажам</router-link>
     </div>
   </div>
 </template>
 
 <script>
 import items from '@/seeders/items';
-import UiCardStats from "@/components/UI/uiCardStats";
+import UiCardStats from '@/components/UI/uiCardStats';
 
 export default {
   components: {UiCardStats},
 
   data() {
     return {
-      item: null,
+      item: null
     };
   },
   created() {
@@ -31,16 +31,16 @@ export default {
     const alias = this.$route.params.person;
 
     // ищем есть ли указанный алиас в seeders, в файлике с данными items
-    const item = items.find(function (currentElement) {
+    const item = items.find(function(currentElement) {
       return currentElement.alias === alias;
     });
 
     this.item = item;
-  },
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang='scss'>
 .wrapper-person {
   text-align: center;
 

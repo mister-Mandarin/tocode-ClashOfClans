@@ -4,3 +4,4 @@
     <router-link class='btn btnPrimary' to='/'>Вернуться на главную</router-link>
   </div>
 </template>
+

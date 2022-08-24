@@ -1,7 +1,16 @@
 <template>
-  <div class="md-body">
+  <div class='md-body'>
     <h1>История релизов.</h1>
-
+    <div>
+      <h2>🍏 Release v1.3</h2>
+      <h3>Ревью после проверки ДЗ:</h3>
+      <ul>
+        <li>Настроен .editorconfig и eslint в WebStorm</li>
+        <li>Файлы не переименовывал по стандарту arbnb</li>
+        <li>В Readme добавил идеальный вариант работы 404 редиректа от преподавателя</li>
+        <li>Публикую итоговый вариант на GitHub Pages</li>
+      </ul>
+    </div>
     <div>
       <h2>🎈 Release v1.2</h2>
       <h3>Выполнены домашние задания:</h3>
@@ -41,9 +50,9 @@
     <p>
       Сделано на курсе
       <a
-        style="color: #ffffff"
-        href="https://tocode.ru/courses/vuejs-3-s-nulya-do-rezultata/?r=l0j"
-        >Vue.js 3 С нуля до результата</a>
+        style='color: #ffffff'
+        href='https://tocode.ru/courses/vuejs-3-s-nulya-do-rezultata/?r=l0j'
+      >Vue.js 3 С нуля до результата</a>
     </p>
   </div>
 </template>

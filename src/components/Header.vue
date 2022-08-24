@@ -1,17 +1,18 @@
 <template>
-  <header class="navbar">
-    <div class="container">
-      <div class="navbar-content">
-        <router-link class="navbar-logo" to="/">{{ title }}</router-link>
-        <ul class="navbar-list">
-          <li v-for="link in links" :key="link.alias" class="navbar-item">
-            <router-link :to="link.url" class="navbar-link"
-              >{{ link.title }}
+  <header class='navbar'>
+    <div class='container'>
+      <div class='navbar-content'>
+        <router-link class='navbar-logo' to='/'>{{ title }}</router-link>
+        <ul class='navbar-list'>
+          <li v-for='link in links' :key='link.alias' class='navbar-item'>
+            <router-link :to='link.url' class='navbar-link'
+            >{{ link.title }}
             </router-link>
           </li>
           <li>
-            <a href="https://github.com/mister-Mandarin/tocode-ClashOfClans" target="_blank">
-            <img style="width: 40px" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            <a href='https://github.com/mister-Mandarin/tocode-ClashOfClans' target='_blank'>
+              <img style='width: 40px' src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+                   alt='GitHub'>
             </a>
           </li>
         </ul>
@@ -21,14 +22,14 @@
 </template>
 
 <script>
-import { app, links } from '@/_config'
+import { app, links } from '@/_config';
 
 export default {
   data() {
     return {
       title: app.title,
       links: links
-    }
+    };
   }
-}
+};
 </script>

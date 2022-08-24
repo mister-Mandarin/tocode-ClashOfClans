@@ -20,9 +20,5 @@ import Footer from '@/components/Footer';
 
 export default {
   components: {Header, Footer}
-  // created() {
-  //   // this.$router.push('/not/found/url');
-  //   console.log(this.$router.getRoutes());
-  // }
 };
 </script>

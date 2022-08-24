@@ -3,7 +3,7 @@ import {
   createWebHistory,
   createWebHashHistory,
   isNavigationFailure,
-  NavigationFailureType,
+  NavigationFailureType
 } from 'vue-router';
 
 //Он использует символ решетки ( # ) перед фактическим URL-адресом, который передается внутри.
@@ -23,12 +23,12 @@ const routes = createRouter({
     {
       path: '/',
       name: 'home',
-      component: homePage,
+      component: homePage
     },
     {
       path: '/about',
       name: 'about',
-      component: aboutPage,
+      component: aboutPage
     },
     {
       path: '/:person',
@@ -39,25 +39,25 @@ const routes = createRouter({
       beforeEnter(to) {
         const valueUrl = to.params.person;
 
-        const a = items.find(function (item) {
+        const a = items.find(function(item) {
           return item.alias === valueUrl;
         });
 
         if (!a) {
           return {
-            name: '404',
+            name: '404'
           };
         }
-      },
+      }
     },
     // Мы хотим поймать абсолютно все пути, которые не соответствуют предыдущим маршрутам.
     {
       // path: '/:CatchAll(.*)',
       path: '/:pathMatch(.*)*',
       name: '404',
-      component: notFoundPage,
-    },
-  ],
+      component: notFoundPage
+    }
+  ]
 });
 //
 // routes.afterEach((to, from, failure) => {

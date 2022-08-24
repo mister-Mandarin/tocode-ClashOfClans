@@ -12,7 +12,7 @@
         </template>
 
         <template v-slot:characteristics>
-          <UiCardStats :info="item.info" />
+          <UiCardStats :info='item.info' />
         </template>
       </ui-card>
     </slide>
@@ -27,12 +27,12 @@
 <script>
 import Card from '@/components/UI/uiCard';
 import items from '@/seeders/items';
-import UiCardStats from "@/components/UI/uiCardStats";
+import UiCardStats from '@/components/UI/uiCardStats';
 
 // импортируем цсс карусели
 import 'vue3-carousel/dist/carousel.css';
 
-import {Carousel, Slide, Navigation} from 'vue3-carousel';
+import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import UiCard from '@/components/UI/uiCard';
 
 export default {

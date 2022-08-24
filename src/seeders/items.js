@@ -1,4 +1,4 @@
-import {images} from '@/assets/img/configImages';
+import { images } from '@/assets/img/configImages';
 
 export default [
   {
@@ -15,8 +15,8 @@ export default [
     info: [
       {title: 'Обучение', value: '20 с'},
       {title: 'Скорость', value: '16'},
-      {title: 'Цена', value: '150'},
-    ],
+      {title: 'Цена', value: '150'}
+    ]
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ export default [
     info: [
       {title: 'Обучение', value: '25 с'},
       {title: 'Скорость', value: '24'},
-      {title: 'Цена', value: '300'},
-    ],
+      {title: 'Цена', value: '300'}
+    ]
   },
   {
     id: 3,
@@ -45,8 +45,8 @@ export default [
     info: [
       {title: 'Обучение', value: '2 с'},
       {title: 'Скорость', value: '12'},
-      {title: 'Цена', value: '2250'},
-    ],
+      {title: 'Цена', value: '2250'}
+    ]
   },
   {
     id: 4,
@@ -60,8 +60,8 @@ export default [
     info: [
       {title: 'Обучение', value: '30 с'},
       {title: 'Скорость', value: '32'},
-      {title: 'Цена', value: '100'},
-    ],
+      {title: 'Цена', value: '100'}
+    ]
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ export default [
     info: [
       {title: 'Обучение', value: '5 м'},
       {title: 'Скорость', value: '16'},
-      {title: 'Цена', value: '3800'},
-    ],
-  },
+      {title: 'Цена', value: '3800'}
+    ]
+  }
 ];
