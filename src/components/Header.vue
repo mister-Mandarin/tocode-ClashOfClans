@@ -9,9 +9,9 @@
             >{{ link.title }}
             </router-link>
           </li>
-          <li>
+          <li style='width: 40px'>
             <a href='https://github.com/mister-Mandarin/tocode-ClashOfClans' target='_blank'>
-              <img style='width: 40px' src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+              <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
                    alt='GitHub'>
             </a>
           </li>
